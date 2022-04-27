@@ -25,13 +25,9 @@
   &__table {
     display: flex;
     flex-direction: column;
-    &-header {
-      margin-top: 16px;
-      display: flex;
-      flex-direction: column;
-      border-top: 1px solid grey;
-    }
     &-body {
+      border-top: 1px solid grey;
+      margin-top: 16px;
       display: flex;
       flex-direction: column;
     }
@@ -55,5 +51,3 @@
     }
   }
 }
-
-

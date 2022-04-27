@@ -1,0 +1,59 @@
+.test {
+  &__btn {
+    display: flex;
+    padding: 10px;
+    color: white;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.4;
+    }
+    &:disabled {
+      background: grey;
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+  &__total {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__table {
+    display: flex;
+    flex-direction: column;
+    &-header {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid grey;
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid grey;
+      border-right: 1px solid grey;
+      border-left: 1px solid grey;
+    }
+    &-data {
+      padding: 5px;
+      display: flex;
+      width: 25%;
+      justify-content: center;
+      border-right: 1px solid grey;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+

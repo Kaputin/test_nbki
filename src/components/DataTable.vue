@@ -4,7 +4,7 @@
     <div class="test__table" v-if="isShow">
         <table class="test__table-header">
           <tr class="test__table-row">
-            <td class="test__table-data" v-for="name in headers" :key="name">{{name}}</td>
+            <th class="test__table-data" v-for="name in headers" :key="name">{{name}}</th>
           </tr>
         </table>
         <table class="test__table-body">
